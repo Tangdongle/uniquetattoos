@@ -1,0 +1,79 @@
+//Main wrapper element
+@import "reset"
+@import "mixins"
+
+body
+  width: 100%
+  min-width: 1000px
+  min-height: 600px
+  height: 100%
+  background-image: url('/static/img/css_texture.png')
+  .center-parent
+    width: 100%
+    position: fixed
+    bottom: 0px
+    height: 100%
+    background-image: url('/static/img/css_fadetop.png')
+    background-repeat: repeat-x
+    .wrapper
+      overflow: hidden
+      width: 1000px
+      height: 100%
+      min-height: 800px
+      margin: 0 auto
+      text-align: center
+      background-image: url('/static/img/f_graphic.png')
+      background-repeat: no-repeat
+      background-position: 450px -120px
+      position: relative
+      img
+        display: block
+        margin: 0 auto
+        &.best_text
+          margin-top: 50px
+          margin-bottom: 50px
+          padding-right: 90px
+        &.body_header
+          margin: 25px auto
+          width: 510px
+          height: 120px
+  .header
+    width: 95%
+    height: 80px
+    margin: 5px auto
+    position: absolute
+  .footer
+    min-width: 1260px 
+    width: 100%
+    position: absolute
+    bottom: 0%
+    z-index: 2
+    &.main
+      background-image: url('/static/img/css_footerrepeat.png')
+      background-repeat: repeat-x
+      min-height: 50px
+      .text
+        background-image: url('/static/img/css_footertext.png')
+        background-repeat: no-repeat
+        margin: 0 auto
+        width: 290px 
+        height: 15px
+        position: relative
+        margin-top: 37px
+    &.right
+      background-image: url('/static/img/css_footerfloatright.png')
+      background-position: right bottom
+      background-repeat: no-repeat
+      min-height: 380px
+      width: 280px
+      right: 0%
+    &.left
+      background-image: url('/static/img/css_footerfloatleft.png')
+      background-position: left bottom
+      background-repeat: no-repeat
+      min-height: 280px
+      width: 600px
+      left: 0%
+
+
+
